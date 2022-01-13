@@ -1,5 +1,5 @@
-# Neverlose api
-This is the neverlose.cc market api wrapper written on node.js
+# Neverlose.cc API
+This is the neverlose.cc market api wrapper written on node.js(ts)
 
 ## Getting started
 
@@ -33,27 +33,6 @@ market.create_https_server({
 });
 
 ```
-
-#### Then create an event handler
-```js
-market.on('balance_transfer', ctx => {
-    console.info(`${ctx.username} transfered to you ${ctx.amount} NLE`); 
-});
-
-```
-
-#### Or use any of POST methods
-```js
-market.give_for_free('my_item', 'Teselka', ctx => {
-    if (ctx.err) {
-        console.error(`Failed to give market item ${ctx.code} to user ${ctx.username}, reason: ${ctx.err}`);
-        return;
-    }
-    
-    console.log(`${ctx.user} successfully got market item ${ctx.code}`);
-});
-```
-
 
 ## Available events
 ### balance_transfer - When user transfered money to your account
@@ -95,7 +74,7 @@ market.gift_product('Teselka', 'csgo', ctx => {
 });
 ```
 
-## Avilable utils
+## Available utils
 ### generate_signature - Generating signature
 ```js
 const sig = market.generate_signature({
