@@ -11,7 +11,7 @@ And setup callback url's
 Then create market class and an http/https server
 
 ```js
-const { NeverloseMarket } = require('neverlose');
+const { NeverloseMarket } = require('neverlose-api');
 
 const market = new NeverloseMarket({
     'userid': 1337,
