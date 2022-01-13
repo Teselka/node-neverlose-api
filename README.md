@@ -2,13 +2,20 @@
 This is the neverlose.cc market api wrapper written on node.js
 
 ## Getting started
-First of all, you should to get your userid and client secret from site (https://neverlose.cc/market/api)
+
+### Install for npm
+
+`npm install neverlose-api`
+
+
+
+### Then you should to get your userid and client secret from site (https://neverlose.cc/market/api)
 
 And setup callback url's
 
 ![alt preview](https://i.imgur.com/br0wiSF.jpg)
 
-Then create market class and an http/https server
+### Then create market class and an http/https server
 
 ```js
 const { NeverloseMarket } = require('neverlose-api');
@@ -27,7 +34,7 @@ market.create_https_server({
 
 ```
 
-Then create an event handler
+#### Then create an event handler
 ```js
 market.on('balance_transfer', ctx => {
     console.info(`${ctx.username} transfered to you ${ctx.amount} NLE`); 
@@ -35,7 +42,7 @@ market.on('balance_transfer', ctx => {
 
 ```
 
-Or use any of POST methods
+#### Or use any of POST methods
 ```js
 market.give_for_free('my_item', 'Teselka', ctx => {
     if (ctx.err) {
