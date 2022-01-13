@@ -1,0 +1,19 @@
+{
+  "name": "neverlose",
+  "version": "1.0.0",
+  "description": "Modern neverlose.cc market framework",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "scripts": {
+    "pretest": "tsc --build",
+    "test": "node tests/index.js"
+  },
+  "author": "Teselka",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "ava": "^3.15.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "composite": true,
+      "declaration": true,
+      "declarationMap": true,
+      "declarationDir": "typings/",
+      "outDir": "lib/",
+      "rootDir": "src/",
+      "target": "ES2019",
+      "strict": true,
+      "noUncheckedIndexedAccess": true,
+      "tsBuildInfoFile": "typings/tsconfig.tsbuildinfo",
+      "noErrorTruncation": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "include": ["src/"]
+}
