@@ -1,5 +1,5 @@
 {
-  "name": "neverlose",
+  "name": "@teselka/neverlose",
   "version": "1.0.0",
   "description": "Modern neverlose.cc market framework",
   "main": "lib/index.js",
@@ -15,5 +15,18 @@
   "devDependencies": {
     "@types/node": "^17.0.8",
     "ava": "^3.15.0"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teselka/neverlose.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Teselka/neverlose/issues"
+  },
+  "homepage": "https://github.com/Teselka/neverlose#readme"
 }

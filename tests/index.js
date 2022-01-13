@@ -22,11 +22,6 @@ market.on('item_purchase', ctx => {
     console.info(`${ctx.username} purchased your market item ${ctx.item_id} for ${ctx.amount} NLE`);
 });
 
-// When http error occured
-market.on('http_error', err => {
-    console.err('http error occured:', err);
-});
-
 // POST requests
 // Giving market item to user
 // market.give_for_free('7Pt9n1', 'Teselka', ctx => {
@@ -62,11 +57,11 @@ market.on('http_error', err => {
 
 // Crypto utils
 // Validating signature
-const sig = market.generate_signature({
+const sig = market.validate_signature({
     "amount": 0.9,
     "username": "A49",
     "unique_id": 89968,
     "item_id": "E3yugw",
     "signature": "454174f972a7b044289fb932ee65a86f41ea389807ff303686da496597289510"
-});
-console.log(sig);
+  });
+//   console.log(sig);
