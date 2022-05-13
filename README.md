@@ -77,23 +77,21 @@ market.gift_product('Teselka', 'csgo', ctx => {
 ## Available utils
 ### generate_signature - Generating signature
 ```js
-const sig = market.generate_signature({
+market.generate_signature({
     "amount": 0.9,
     "username": "A49",
     "unique_id": 89968,
     "item_id": "E3yugw",
 });
-console.log(sig);
 ```
 
 ### validate_signature - Validating signature
 ```js
-const sig = market.validate_signature({
+market.validate_signature({
     "amount": 0.9,
     "username": "A49",
     "unique_id": 89968,
     "item_id": "E3yugw",
-    "signature": "454174f972a7b044289fb932ee65a86f41ea389807ff303686da496597289510"
+    "signature": "your_sig"
 });
-console.log(sig); // true
 ```
